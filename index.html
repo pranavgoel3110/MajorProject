@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Input Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="background"></div>
+    <nav>
+        <a href="#" class="logo">Major Project</a>
+        <ul class="nav-links">
+          <li><a href="#">Online Doctor</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+        <button class="nav-button">Upload Your Image</button>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      
+      <div class="heading">
+        <h1>Early Detection of Oral Cancer</h1>
+    </div>
+
+    <div class="container">
+        
+        <div class="image-upload-container">
+            <label for="image-upload" class="upload-btn">Upload Image</label>
+            <input type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
+            <div class="image-preview">
+              <img id="preview" alt="Image Preview">
+              <div class="remove-btn" onclick="removeImage()">Remove</div>
+              <div class="submit-btn" onclick="window.location.href='diagnosis/stages.html';">Submit</div>
+
+            </div>
+          </div>
+          
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
